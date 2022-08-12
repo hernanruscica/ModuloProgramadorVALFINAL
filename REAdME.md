@@ -8,5 +8,5 @@
     <li>Elegir algunos de los puntos 3 al 12 y agregarlo al script  (diferentes entre cada uno de los integrantes)</li>
     <li>Subir Script .sql con todos los puntos mencionados a su rama personal del GitHub grupal</li>
 </ol>
-
+<a href="https://acceso.ispc.edu.ar/mod/assign/view.php?id=30085https://acceso.ispc.edu.ar/mod/assign/view.php?id=30085>enlace a la plataforma de ISP</a>
 

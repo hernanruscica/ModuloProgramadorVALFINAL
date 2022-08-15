@@ -68,7 +68,7 @@ INSERT INTO historial (ID_Historial, Fecha, Descripcion, Monto, Perro) VALUES (n
 INSERT INTO historial (ID_Historial, Fecha, Descripcion, Monto, Perro) VALUES (null, '2022-07-31', 'Masajes', 815.2, 2);
 
 -- 3. Borre un animal que ya no va a ser atendido. consulteen el historial,animal que ya no sea atendido desde hace mucho tiempo.
--- 
+-- Como no especifica "cuanto es mucho tiempo", decidí que fuera de antes del año en curso (2022)
 
 -- 4. Actualice la fecha de nacimiento de algún animal (perro) que usted considere.
 UPDATE perro SET Fecha_nac = '2021-06-26' WHERE ID_Perro = 2;
@@ -82,5 +82,14 @@ SELECT p.nombre, h.Fecha, p.sexo FROM perro p JOIN historial h ON (p.ID_Perro = 
 
 -- 7. Obtener los ingresos percibidos en Julio del 2022
 SELECT SUM(Monto) FROM historial WHERE Fecha >= '2022-07-01' AND Fecha < '2022-08-01'; 
+
+-- 9. Escriba una consulta que permita actualizar la dirección de un dueño. Su nueva dirección es Libertad 123
+UPDATE dueno SET Direccion = 'Libertad 123' WHERE DNI = 42000145;
+SELECT Nombre, Direccion FROM dueno WHERE DNI = 42000145;
+
+-- 10. Vaciar la tabla historial y resetear el contador del campo ID.
+TRUNCATE TABLE historial;
+INSERT INTO historial (ID_Historial, Fecha, Descripcion, Monto, Perro) VALUES (null, '2022-07-31', 'Masajes', 815.2, 2);
+SELECT * FROM historial;
 
 

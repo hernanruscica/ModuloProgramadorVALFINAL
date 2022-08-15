@@ -1,3 +1,4 @@
+<h1>Cesar Hernan Ruscica</h1>
 <h1>Ejercicio de base de datos</h1>
 <h2>Consignas peluqueria canina</h2>
 <a href="./peluCanina-BD-diagrama.png">diagrama BD</href>
